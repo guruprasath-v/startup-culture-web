@@ -45,7 +45,10 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-between;
     background-color: black;
 
+
 }
+
+
 
 .nav-bar a img{
     max-width: 10rem;
@@ -76,7 +79,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .toggle-button{
-    position: absolute;
+    position: absolute ;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -137,3 +140,16 @@ body::-webkit-scrollbar-thumb{
 
 }
 
+
+
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.hero-image img{
+    height: 30rem;
+}
