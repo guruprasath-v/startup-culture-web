@@ -28,3 +28,5 @@ document.addEventListener('click', (event) => {
 navbarLinks.addEventListener('click', (event) => {
     event.stopPropagation();
 });
+
+
