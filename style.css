@@ -191,6 +191,13 @@ body::-webkit-scrollbar-thumb{
 @keyframes erasing {
     to { width: 0; }
 }
+.home{
+    width: max-content;
+    
+}
+.home h1{
+    text-align: center;
+}
 
 @media (max-width:500px){
     .home{
@@ -259,7 +266,7 @@ body::-webkit-scrollbar-thumb{
 .bar{
     width: 100px;
     height: 3px;
-    background-color: #F8D108;
+    background-color: hsl(50, 94%, 50%);
 }
 .contents ul{
     list-style: none;
@@ -275,6 +282,9 @@ body::-webkit-scrollbar-thumb{
         align-items: center;
     }
 }
+p{
+    font-family: 'Amaranth';
+}
 
 .icon-image{
     width: 3%;
@@ -283,28 +293,63 @@ body::-webkit-scrollbar-thumb{
 
 .service{
     width: 100%;
-    height: 45vh;
+    height: max-content;
     background-color: rgba(0, 0, 0, 0.137);
     margin-top: 10%;
-    padding: 20px;
 }
-.service-block{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: max-content;
+.service h2{
+    text-align: center;
+    font-size: 5.1rem;
 }
-.service-flex{
+.card-items{
+    background: hsl(50, 94%, 55%);
+    width: 23vw;
+    height: 40vh;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+}
+
+.card-items:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+.card-head{
+    font-size: 2.7rem;
+    margin-bottom: 1.5rem;
+    background-color: hsl(100, 0%, 0%);
+    color: white;
+    border-radius: .6rem;
+    padding-left: .6rem;
+    text-align: center;
+}
+.card-cont p{
+    font-size: 1.4rem;
+    color: black;
+}
+.card-foot {
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:start;
-    margin: 40px 40px;
+    justify-content: end;
+}
+.card-foot button{
+    background-color: hsl(0,100%, 0%);
+    color: white;
+    padding: .5rem;
+    border-radius: .4rem;
+    border: none;
 }
 
 .service-container{
-    font-size: 5em;
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.course-over{
+    display: none;
 }
 
 .flip-body {
@@ -361,7 +406,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     border-radius: 50%;
   }
-  .flip-card-front img{
+  .flip-card-front img {
     width: 80%;
   }
   
@@ -382,4 +427,5 @@ body::-webkit-scrollbar-thumb{
     font-weight: bold;
     color: #fff;
   }
+
   
