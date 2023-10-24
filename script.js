@@ -1,5 +1,9 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const cardFooter = document.getElementsByClassName('button')[0]
+const courseContent = document.getElementsByClassName('course-content')[0]
+const couurseOverview = document.getElementsByClassName('course-over')[0]
+const cardButton = document.getElementsByClassName('button')[0]
 
 
 
@@ -28,5 +32,24 @@ document.addEventListener('click', (event) => {
 navbarLinks.addEventListener('click', (event) => {
     event.stopPropagation();
 });
+
+
+let d = 1;
+
+cardFooter.addEventListener('click', () => {
+    d = 1-d;
+    if(d == 0){
+        courseContent.style.display = 'none';
+        couurseOverview.style.display = 'flex';
+        cardButton.textContent = 'Show less...';
+    }
+    if(d == 1){
+        courseContent.style.display = 'block';
+        couurseOverview.style.display = 'none';
+        cardButton.textContent = 'Show More...';
+    }
+})
+
+
 
 
