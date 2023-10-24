@@ -52,4 +52,51 @@ cardFooter.addEventListener('click', () => {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    "use strict";
+
+    // Get the element with the ID 'customers-testimonials'
+    const testimonialsCarousel = document.getElementById('customers-testimonials');
+
+    if (testimonialsCarousel) {
+        // Initialize the carousel
+        const owlCarousel = new window.OwlCarousel(testimonialsCarousel, {
+            loop: true,
+            center: true,
+            items: 3,
+            margin: 0,
+            autoplay: true,
+            dots: true,
+            autoplayTimeout: 8500,
+            smartSpeed: 450,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1170: {
+                    items: 3
+                }
+            }
+        });
+    }
+});
+
+ 
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:true,
+        transitionStyle:"backSlide",
+        autoPlay:true
+    });
+});
+
+
+
 
